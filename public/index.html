@@ -1,13 +1,119 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;400&family=Open+Sans:wght@400;600&display=swap" 
+  rel="stylesheet">
+
+  <!--Font Awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="">
+<!--Header Section-->
+<header class="bg-Gri py-6 font-Hanken text-emerald-50 uppercase">
+  <nav class="flex justify-between items-center w-full mx-auto">
+    <div> 
+      <a class="hidden md:block font-Hanken text-4xl" href="">SPORTS</a>    
+    </div>
+   <!--Menu-->
+<div class=" mb-4 border-b border-gray-200 dark:border-gray-700">
+  <ul class="flex md:flex-nowrap -mb-px text-xs md:text-xl lg:text-2xl text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+      <li class="mr-2" role="presentation">
+          <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+      </li>
+      <li class="mr-2" role="presentation">
+          <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+      </li>
+      <li class="mr-2" role="presentation">
+          <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+      </li>
+      <li role="presentation">
+          <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+      </li>
+  </ul>
+</div>
+
+<div id="myTabContent">
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+</div>
+<!--güncel hali 
+<div class="p-5">
+  <div class="flex flex-col">
+    <div class="w-96 rounded-t-2xl bg-gray-800 p-5">
+      <div class="flex flex-row pb-5 space-x-4">
+      <div id="logo1" class="basis-10 justify-"><img src="https://media.fenerbahce.org/FB/media/FB/Images/Logo/logo.png?ext=.png"></div>
+      <div id="logo2" class="basis-10"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Galatasaray_Sports_Club_Logo.png/481px-Galatasaray_Sports_Club_Logo.png"></div>
+      <div id="date" class="text-emerald-50 pl-24"/>Sun 15, Dec, 2019</div>
+      </div>
+      
+      <img src="https://im.haberturk.com/2019/09/03/ver1567567554/2518754_810x458.jpg" class="rounded-lg" /></div>
+    <div class="h-80 w-96 pl-5 bg-gray-800 rounded-b-2xl"><p class="text-emerald-50">Premier League</p>
+    <p class="text-gray-400">Futbol, Basketbol</p>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+
+-->
+    <!--
+    alttaki yenilenir
+    <div class="">
+      <ul class="flex items-center gap-[4vw]"> 
+        
+        <li>
+          <a href="" class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Home</a>
+        </li>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<footer class="">
+   <div class="fixed bottom-0 left-0 z-50 w-full h-16 bg-Gri">
+      <div class="grid h-full max-w-lg grid-cols-4 mx-auto">
+        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 group">
+          
+          <span class="text-sm text-emerald-50 group-hover:text-neutral-900"><a href="" class="fa-solid fa-house fa-2xl"></a></span>
+        </button>
+        <button type="button">
+          <span class="text-sm text-emerald-50 group-hover:text-blue-600"><a href="" class="fa-solid fa-newspaper fa-2xl"></a></span>
+        </button>
+        <button type="button">
+          <span class="text-sm text-emerald-50 group-hover:text-blue-600"><a href="" class="fa-solid fa-pen-to-square fa-2x1"></a></span>
+        </button>
+        <button type="button">
+          <span class="text-sm text-emerald-50 group-hover:text-blue-600"><a href="" class="fa-solid fa-bookmark fa-2x1"></a></span>
+        </button>
+      </div>
+   </div>
+  </div>
+-->
+</footer>
 </body>
-</html>
